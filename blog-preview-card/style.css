@@ -119,6 +119,7 @@ p {
   position: absolute;
   bottom: 1rem;
 }
+
 .attribution a {
   color: var(--gray-900);
   text-decoration: none;
