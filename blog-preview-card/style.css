@@ -114,7 +114,7 @@ p {
   bottom: 1rem;
 }
 .attribution a {
-  color: red;
+  color: var(--gray-900);
   text-decoration: none;
 }
 
