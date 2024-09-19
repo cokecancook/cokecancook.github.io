@@ -18,8 +18,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [https://github.com/cokecancook/cokecancook.github.io/tree/main/social-links-profile](https://github.com/cokecancook/cokecancook.github.io/tree/main/social-links-profile)
-- Live Site URL: [https://cokecancook.github.io/social-links-profile//](https://cokecancook.github.io/social-links-profile//)
+- Solution URL: [https://github.com/cokecancook/cokecancook.github.io/tree/main/recipe-page](https://github.com/cokecancook/cokecancook.github.io/tree/main/recipe-page)
+- Live Site URL: [https://cokecancook.github.io/recipe-page](https://cokecancook.github.io/recipe-page)
 
 ### Built with
 
