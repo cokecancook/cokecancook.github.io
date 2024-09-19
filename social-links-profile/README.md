@@ -19,7 +19,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: [https://github.com/cokecancook/cokecancook.github.io/tree/main/social-links-profile](https://github.com/cokecancook/cokecancook.github.io/tree/main/social-links-profile)
-- Live Site URL: [https://cokecancook.github.io/social-links-profile//](https://cokecancook.github.io/social-links-profile//)
+- Live Site URL: [https://cokecancook.github.io/social-links-profile](https://cokecancook.github.io/social-links-profile)
 
 ### Built with
 
