@@ -31,6 +31,7 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
+    <div id="overlay"></div>
     <main role="figure">
       <div class="image">
         <img
@@ -70,5 +71,10 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/cokecancook">Coke Stuyck</a>.
     </div>
+    <script>
+      window.onload = setTimeout(function () {
+        document.getElementById("overlay").style.display = "none";
+      }, 500);
+    </script>
   </body>
 </html>

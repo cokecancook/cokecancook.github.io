@@ -53,7 +53,6 @@ body {
   left: 0;
   z-index: 10;
   display: block;
-  transition: all ease 5s;
 }
 
 h1 {

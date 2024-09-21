@@ -42,6 +42,17 @@ body {
   justify-content: center;
 }
 
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--cream);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+}
+
 main {
   max-width: 374px;
   border-radius: 16px;
