@@ -8,6 +8,7 @@
   --very-dark-gray: hsl(240, 2%, 7%);
   --dark-grayish-blue: hsl(227, 6%, 30%);
   --white: hsl(0, 0%, 100%);
+  --almost-white: hsl(0, 0%, 75%);
 }
 
 .urbanist-regular {
@@ -43,6 +44,18 @@ body {
   justify-content: center;
 }
 
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--very-dark);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  transition: all ease 5s;
+}
+
 h1 {
   font-size: 1.4rem;
   letter-spacing: 0.04rem;
@@ -56,7 +69,9 @@ h1::before {
   background-color: var(--green);
   border-radius: 50%;
   display: inline-block;
-  margin-right: 8px;
+  vertical-align: middle;
+  margin-right: 12px;
+  box-shadow: 0 0 10px var(--green);
 }
 
 p {
@@ -74,7 +89,7 @@ ul {
 
 li a {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--almost-white);
   letter-spacing: -0.02rem;
   line-height: 1;
   text-decoration: none;
@@ -87,10 +102,13 @@ li a {
 
 ul:hover li a:not(:hover) {
   color: var(--dark-grayish-blue);
+  transition: color ease 0.3s;
 }
 
 ul:hover li a:hover {
+  color: var(--white);
   background-color: var(--very-dark-gray);
+  transition: color ease 0.3s;
 }
 
 @media screen and (min-width: 800px) {
@@ -102,6 +120,7 @@ ul:hover li a:hover {
   h1::before {
     height: 12px;
     width: 12px;
+    margin-right: 16px;
   }
 
   li a {

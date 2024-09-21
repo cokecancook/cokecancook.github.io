@@ -27,6 +27,7 @@
   </head>
 
   <body>
+    <div id="overlay"></div>
     <h1 class="urbanist-regular">Playground</h1>
     <p class="urbanist-regular">Learning about web development.</p>
     <ul>
@@ -48,5 +49,10 @@
         >
       </li>
     </ul>
+    <script>
+      window.onload = setTimeout(function () {
+        document.getElementById("overlay").style.display = "none";
+      }, 500);
+    </script>
   </body>
 </html>
