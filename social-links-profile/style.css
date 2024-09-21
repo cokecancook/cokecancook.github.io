@@ -147,6 +147,7 @@ p {
   background-color: var(--green);
   color: var(--gray-900);
   box-shadow: 0 0 60px -16px var(--green);
+  cursor: pointer;
 }
 
 .attribution {
