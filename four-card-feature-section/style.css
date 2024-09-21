@@ -239,9 +239,16 @@ h3 {
       " item1 item3 item4"
       " . item3 .";
   }
-  .attribution {
-    position: absolute;
-    bottom: 1rem;
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .info {
+    max-width: 600px;
   }
 }
 
