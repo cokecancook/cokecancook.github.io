@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main role="figure">
+      <div class="image">
+        <img
+          height="480"
+          widht="686"
+          alt="image"
+          class="mobile"
+          src="./images/image-product-mobile.jpg"
+        />
+        <img
+          height="900"
+          widht="600"
+          alt="image"
+          class="desktop"
+          src="./images/image-product-desktop.jpg"
+        />
+      </div>
+      <div class="content">
+        <div class="text">
+          <h2>Perfume</h2>
+          <h1 class="fraunces-bold">Gabrielle Essence Eau De Parfum</h1>
+          <p class="montserrat-regular">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price">
+            <span class="price-value fraunces-bold">$149.99</span>
+            <span class="price-original">$169.99</span>
+          </div>
+        </div>
+        <button><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+      </div>
+    </main>
+    <div class="attribution" role="contentinfo">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/cokecancook">Coke Stuyck</a>.
+    </div>
+  </body>
+</html>
