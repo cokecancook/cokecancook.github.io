@@ -206,6 +206,7 @@ footer a:hover {
     min-width: unset;
     max-width: 620px;
     padding: 32px;
+    margin-top: 40px;
   }
 
   img {
