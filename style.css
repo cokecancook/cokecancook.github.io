@@ -33,6 +33,7 @@
 
 body {
   min-height: 100dvh;
+  width: 100%;
   background-color: var(--very-dark);
   color: var(--white);
   font-family: Urbanist, sans-serif;
@@ -41,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #overlay {
@@ -60,6 +61,7 @@ h1 {
   letter-spacing: 0.04rem;
   line-height: 1.5;
   margin-bottom: 10px;
+  margin-top: 40px;
 }
 
 h1::before {
@@ -81,8 +83,11 @@ p {
 }
 
 ul {
+  height: 100%;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
+  justify-content: center;
   padding: 20px 24px;
   list-style: none;
   margin-top: 24px;
@@ -116,7 +121,6 @@ ul:hover li a:hover {
   h1 {
     font-size: 1.8rem;
     letter-spacing: 0.04rem;
-    margin-top: 40px;
   }
 
   h1::before {
@@ -140,9 +144,5 @@ ul:hover li a:hover {
   li a {
     font-size: 2rem;
     padding: 24px 64px;
-  }
-
-  h1 {
-    margin-top: 40px;
   }
 }
