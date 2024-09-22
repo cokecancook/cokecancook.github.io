@@ -369,11 +369,31 @@ ul:hover li a:hover {
     margin-top: 48px;
     padding: 24px 24px;
   }
+
+  #li1 a,
+  #li2 a,
+  #li3 a,
+  #li4 a,
+  #li5 a,
+  #li6 a,
+  #li7 a {
+    animation: none;
+  }
 }
 
-@media screen and (min-width: 404px) and (max-width: 880px) {
+@media screen and (min-width: 430px) and (max-width: 880px) {
   li a {
     font-size: 2rem;
     padding: 24px 64px;
+  }
+
+  #li1 a,
+  #li2 a,
+  #li3 a,
+  #li4 a,
+  #li5 a,
+  #li6 a,
+  #li7 a {
+    animation: none;
   }
 }
