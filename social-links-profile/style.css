@@ -60,6 +60,14 @@ body {
   display: block;
 }
 
+#container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 0;
+}
+
 main {
   width: 400px;
   max-width: 360px;
@@ -143,7 +151,8 @@ p {
   transition: ease background-color 0.5s;
 }
 
-.links li:hover {
+.links li:hover,
+.links li:focus {
   background-color: var(--green);
   color: var(--gray-900);
   box-shadow: 0 0 60px -16px var(--green);
@@ -153,10 +162,8 @@ p {
 .attribution {
   font-size: 0.8rem;
   text-align: center;
-  letter-spacing: 0.2px;
-  position: absolute;
-  bottom: 1rem;
-  opacity: 0.8;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .attribution a {
@@ -174,5 +181,8 @@ p {
     width: 320px;
     max-width: 320px;
     padding: 30px 20px;
+  }
+  #container {
+    justify-content: flex-start;
   }
 }

@@ -59,7 +59,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 40px;
+  padding: 80px 20px;
+}
+
+#container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 0;
 }
 
 .testimonials {
@@ -70,7 +78,7 @@ main {
 
 .testimonial {
   padding: 40px 40px 50px 40px;
-  width: 400px;
+  max-width: 400px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -183,8 +191,8 @@ p.highlight {
 .attribution {
   font-size: 0.8rem;
   text-align: center;
-  letter-spacing: 0.2px;
   position: relative;
+  flex-shrink: 0;
   bottom: 1rem;
 }
 
@@ -225,7 +233,7 @@ p.highlight {
   }
 
   .testimonial {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -241,7 +249,7 @@ p.highlight {
   }
 
   .testimonial {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -258,6 +266,6 @@ p.highlight {
   }
 
   .testimonial {
-    width: 100%;
+    max-width: 100%;
   }
 }

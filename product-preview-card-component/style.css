@@ -53,6 +53,14 @@ body {
   display: block;
 }
 
+#container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 40px 0;
+}
+
 main {
   max-width: 374px;
   border-radius: 16px;
@@ -61,6 +69,7 @@ main {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  margin: 0 20px;
 }
 
 img {
@@ -151,11 +160,11 @@ button:hover {
 }
 
 .attribution {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: center;
-  letter-spacing: 0.2px;
-  position: absolute;
-  bottom: 1rem;
+  position: relative;
+  flex-shrink: 0;
+  padding: 8px 0;
 }
 
 .attribution a {
@@ -173,6 +182,10 @@ button:hover {
     flex-direction: row;
     min-width: 800px;
     height: 600px;
+  }
+
+  #container {
+    justify-content: center;
   }
 
   .image img {
