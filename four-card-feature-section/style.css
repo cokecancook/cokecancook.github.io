@@ -141,12 +141,14 @@ p {
   border-top: 6px solid var(--Cyan);
 }
 
-.card:nth-child(1):hover {
+.card:nth-child(1):hover,
+.card:nth-child(1):focus {
   box-shadow: 0 12px 40px -20px var(--Cyan),
     0 12px 40px -10px var(--grayish-blue);
 }
 
-.card:nth-child(1):hover img {
+.card:nth-child(1):hover img,
+.card:nth-child(1):focus img {
   transform: scale(1.1);
   transition: transform ease 0.3s;
 }
@@ -155,12 +157,14 @@ p {
   border-top: 6px solid var(--Red);
 }
 
-.card:nth-child(2):hover {
+.card:nth-child(2):hover,
+.card:nth-child(2):focus {
   box-shadow: 0 12px 40px -20px var(--Red),
     0 12px 40px -10px var(--grayish-blue);
 }
 
-.card:nth-child(2):hover img {
+.card:nth-child(2):hover img,
+.card:nth-child(2):focus img {
   transform: scale(1.1);
   transition: transform ease 0.3s;
 }
@@ -169,12 +173,14 @@ p {
   border-top: 6px solid var(--Orange);
 }
 
-.card:nth-child(3):hover {
+.card:nth-child(3):hover,
+.card:nth-child(3):focus {
   box-shadow: 0 12px 40px -20px var(--Orange),
     0 12px 40px -10px var(--grayish-blue);
 }
 
-.card:nth-child(3):hover img {
+.card:nth-child(3):hover img,
+.card:nth-child(3):focus img {
   transform: scale(1.1);
   transition: transform ease 0.3s;
 }
@@ -183,12 +189,14 @@ p {
   border-top: 6px solid var(--Blue);
 }
 
-.card:nth-child(4):hover {
+.card:nth-child(4):hover,
+.card:nth-child(4):focus {
   box-shadow: 0 12px 40px -20px var(--Blue),
     0 12px 40px -10px var(--grayish-blue);
 }
 
-.card:nth-child(4):hover img {
+.card:nth-child(4):hover img,
+.card:nth-child(4):focus img {
   transform: scale(1.1);
   transition: transform ease 0.3s;
 }
