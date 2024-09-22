@@ -37,7 +37,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--gray-900);
   color: var(--white);
   font-family: Figtree, "Open Sans", "Helvetica Neue", sans-serif;
@@ -164,6 +164,7 @@ p {
   text-align: center;
   position: relative;
   flex-shrink: 0;
+  bottom: 1rem;
 }
 
 .attribution a {

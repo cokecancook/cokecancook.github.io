@@ -95,6 +95,7 @@ p {
   text-align: center;
   position: relative;
   flex-shrink: 0;
+  bottom: 1rem;
 }
 .attribution a {
   color: var(--slate-500);
