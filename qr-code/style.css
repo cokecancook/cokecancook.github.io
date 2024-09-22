@@ -14,7 +14,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--slate-300);
   color: var(--slate-900);
   font-family: Outfit, "Open Sans", "Helvetica Neue", sans-serif;
