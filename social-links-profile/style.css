@@ -87,7 +87,7 @@ main {
   border-radius: 50%;
   overflow: hidden;
   transition: ease box-shadow 1s;
-  animation: highlight-img 5s ease 0s;
+  animation: highlight-img 5s ease 2s;
   animation-iteration-count: infinite;
 }
 
@@ -154,23 +154,23 @@ p {
 }
 
 #link1 {
-  animation: highlight-button1 5s ease 0s;
+  animation: highlight-button1 5s ease 2s;
   animation-iteration-count: infinite;
 }
 #link2 {
-  animation: highlight-button2 5s ease 0s;
+  animation: highlight-button2 5s ease 2s;
   animation-iteration-count: infinite;
 }
 #link3 {
-  animation: highlight-button3 5s ease 0s;
+  animation: highlight-button3 5s ease 2s;
   animation-iteration-count: infinite;
 }
 #link4 {
-  animation: highlight-button4 5s ease 0s;
+  animation: highlight-button4 5s ease 2s;
   animation-iteration-count: infinite;
 }
 #link5 {
-  animation: highlight-button5 5s ease 0s;
+  animation: highlight-button5 5s ease 2s;
   animation-iteration-count: infinite;
 }
 
