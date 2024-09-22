@@ -87,6 +87,8 @@ main {
   border-radius: 50%;
   overflow: hidden;
   transition: ease box-shadow 1s;
+  animation: highlight-img 5s ease 0s;
+  animation-iteration-count: infinite;
 }
 
 .image:hover {
@@ -151,12 +153,41 @@ p {
   transition: ease background-color 0.5s;
 }
 
+#link1 {
+  animation: highlight-button1 5s ease 0s;
+  animation-iteration-count: infinite;
+}
+#link2 {
+  animation: highlight-button2 5s ease 0s;
+  animation-iteration-count: infinite;
+}
+#link3 {
+  animation: highlight-button3 5s ease 0s;
+  animation-iteration-count: infinite;
+}
+#link4 {
+  animation: highlight-button4 5s ease 0s;
+  animation-iteration-count: infinite;
+}
+#link5 {
+  animation: highlight-button5 5s ease 0s;
+  animation-iteration-count: infinite;
+}
+
 .links li:hover,
 .links li:focus {
   background-color: var(--green);
   color: var(--gray-900);
   box-shadow: 0 0 60px -16px var(--green);
   cursor: pointer;
+}
+
+.selected {
+  background-color: var(--green) !important;
+  color: var(--gray-900) !important;
+  box-shadow: 0 0 60px -16px var(--green);
+  cursor: pointer;
+  transition: ease all 0.3s;
 }
 
 .attribution {
@@ -177,7 +208,7 @@ p {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   main {
     width: 320px;
     max-width: 320px;
@@ -185,5 +216,190 @@ p {
   }
   #container {
     justify-content: flex-start;
+  }
+
+  @keyframes highlight-button1 {
+    0% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    10% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    13% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    16% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    26% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    100% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+  }
+  @keyframes highlight-button2 {
+    0% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    15% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    18% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    21% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    31% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    100% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+  }
+  @keyframes highlight-button3 {
+    0% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    20% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    23% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    26% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    36% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    100% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+  }
+  @keyframes highlight-button4 {
+    0% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    25% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    28% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    31% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    41% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    100% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+  }
+  @keyframes highlight-button5 {
+    0% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    30% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    33% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    36% {
+      background-color: var(--green);
+      color: var(--gray-900);
+      box-shadow: 0 0 60px -16px var(--green);
+    }
+    46% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+    100% {
+      background-color: var(--gray-700);
+      color: var(--white);
+      box-shadow: none;
+    }
+  }
+
+  @keyframes highlight-img {
+    0% {
+      box-shadow: none;
+    }
+    40% {
+      box-shadow: none;
+    }
+    46% {
+      box-shadow: 0 0 80px -20px var(--white);
+    }
+    66% {
+      box-shadow: 0 0 60px -20px var(--white);
+    }
+    86% {
+      box-shadow: 0 0 90px -20px var(--white);
+    }
+    90% {
+      box-shadow: 0 0 90px -20px var(--white);
+    }
+    100% {
+      box-shadow: none;
+    }
   }
 }

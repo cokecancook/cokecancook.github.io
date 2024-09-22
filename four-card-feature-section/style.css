@@ -47,6 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 #overlay {
@@ -72,7 +73,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 40px;
+  padding: 60px 40px;
   margin: 0 20px;
 }
 
@@ -129,12 +130,8 @@ p {
   padding: 30px 40px;
   border-radius: 6px;
   box-shadow: 0 12px 40px -10px var(--grayish-blue);
-  transition: box-shadow ease 0.3s;
+  transition: box-shadow ease 0.3s, transform ease 0.3s;
   cursor: pointer;
-}
-
-.card img {
-  transition: transform ease 0.3s;
 }
 
 .card:nth-child(1) {
@@ -145,12 +142,7 @@ p {
 .card:nth-child(1):focus {
   box-shadow: 0 12px 40px -20px var(--Cyan),
     0 12px 40px -10px var(--grayish-blue);
-}
-
-.card:nth-child(1):hover img,
-.card:nth-child(1):focus img {
-  transform: scale(1.1);
-  transition: transform ease 0.3s;
+  transform: scale(1.02);
 }
 
 .card:nth-child(2) {
@@ -161,12 +153,7 @@ p {
 .card:nth-child(2):focus {
   box-shadow: 0 12px 40px -20px var(--Red),
     0 12px 40px -10px var(--grayish-blue);
-}
-
-.card:nth-child(2):hover img,
-.card:nth-child(2):focus img {
-  transform: scale(1.1);
-  transition: transform ease 0.3s;
+  transform: scale(1.02);
 }
 
 .card:nth-child(3) {
@@ -177,12 +164,7 @@ p {
 .card:nth-child(3):focus {
   box-shadow: 0 12px 40px -20px var(--Orange),
     0 12px 40px -10px var(--grayish-blue);
-}
-
-.card:nth-child(3):hover img,
-.card:nth-child(3):focus img {
-  transform: scale(1.1);
-  transition: transform ease 0.3s;
+  transform: scale(1.02);
 }
 
 .card:nth-child(4) {
@@ -193,12 +175,7 @@ p {
 .card:nth-child(4):focus {
   box-shadow: 0 12px 40px -20px var(--Blue),
     0 12px 40px -10px var(--grayish-blue);
-}
-
-.card:nth-child(4):hover img,
-.card:nth-child(4):focus img {
-  transform: scale(1.1);
-  transition: transform ease 0.3s;
+  transform: scale(1.02);
 }
 
 h3 {
@@ -248,6 +225,136 @@ h3 {
   grid-area: item4;
 }
 
+#card1 {
+  animation: highlight-card1 6s ease 0s;
+  animation-iteration-count: infinite;
+}
+#card2 {
+  animation: highlight-card2 6s ease 0s;
+  animation-iteration-count: infinite;
+}
+#card3 {
+  animation: highlight-card3 6s ease 0s;
+  animation-iteration-count: infinite;
+}
+#card4 {
+  animation: highlight-card4 6s ease 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes highlight-card1 {
+  0% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  10% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  15% {
+    box-shadow: 0 12px 40px -20px var(--Cyan),
+      0 12px 40px -10px var(--grayish-blue);
+    transform: scale(1.02);
+  }
+  30% {
+    box-shadow: 0 12px 40px -20px var(--Cyan),
+      0 12px 40px -10px var(--grayish-blue);
+    transform: scale(1.02);
+  }
+  35% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  100% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+}
+@keyframes highlight-card2 {
+  0% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  30% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  35% {
+    box-shadow: 0 12px 40px -20px var(--Red),
+      0 12px 40px -10px var(--grayish-blue);
+    transform: scale(1.02);
+  }
+  50% {
+    box-shadow: 0 12px 40px -20px var(--Red),
+      0 12px 40px -10px var(--grayish-blue);
+    transform: scale(1.02);
+  }
+  55% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  100% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+}
+@keyframes highlight-card3 {
+  0% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  50% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  55% {
+    box-shadow: 0 12px 40px -20px var(--Orange),
+      0 12px 40px -10px var(--grayish-blue);
+    transform: scale(1.02);
+  }
+  70% {
+    box-shadow: 0 12px 40px -20px var(--Orange),
+      0 12px 40px -10px var(--grayish-blue);
+    transform: scale(1.02);
+  }
+  75% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  100% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+}
+@keyframes highlight-card4 {
+  0% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  70% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  75% {
+    box-shadow: 0 12px 40px -20px var(--Blue),
+      0 12px 40px -10px var(--grayish-blue);
+    transform: scale(1.02);
+  }
+  90% {
+    box-shadow: 0 12px 40px -20px var(--Blue),
+      0 12px 40px -10px var(--grayish-blue);
+    transform: scale(1.02);
+  }
+  95% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+  100% {
+    box-shadow: 0 12px 40px -10px var(--grayish-blue);
+    transform: none;
+  }
+}
+
 @media screen and (min-width: 1320px) {
   .cards {
     display: grid;
@@ -275,6 +382,13 @@ h3 {
   .info {
     max-width: 600px;
   }
+
+  #card1,
+  #card2,
+  #card3,
+  #card4 {
+    animation: none;
+  }
 }
 
 @media screen and (min-width: 880px) and (max-width: 1320px) {
@@ -292,10 +406,24 @@ h3 {
   .card {
     width: 400px;
   }
+
+  #card1,
+  #card2,
+  #card3,
+  #card4 {
+    animation: none;
+  }
 }
 
 @media screen and (min-width: 440px) and (max-width: 880px) {
   .card {
     width: 400px;
+  }
+
+  #card1,
+  #card2,
+  #card3,
+  #card4 {
+    animation: none;
   }
 }
