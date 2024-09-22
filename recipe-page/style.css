@@ -66,7 +66,7 @@ body {
 
 main {
   min-width: 100%;
-  border-radius: 22px;
+  border-radius: 0px;
   background-color: var(--white);
   display: flex;
   gap: 24px;
@@ -184,7 +184,8 @@ hr {
 footer {
   font-size: 12.8px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer a {
@@ -197,7 +198,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 660px) {
   body {
     justify-content: center;
   }
@@ -207,6 +208,7 @@ footer a:hover {
     max-width: 620px;
     padding: 32px;
     margin-top: 40px;
+    border-radius: 22px;
   }
 
   img {
