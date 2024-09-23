@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body role="main">
+    <div id="overlay"></div>
+    <div class="container">
+      <article class="content" role="figure">
+        <div class="image">
+          <div class="image-overlay-icon">
+            <img alt="image" src="./images/icon-view.svg" />
+          </div>
+          <div class="image-overlay"></div>
+          <img
+            class="main-image"
+            alt="image"
+            src="./images/image-equilibrium.jpg"
+          />
+        </div>
+        <div class="info">
+          <div class="text">
+            <h1 class="outfit-bold">Equilibrium #3429</h1>
+            <p class="outfit-light">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+          </div>
+          <div class="details">
+            <div>
+              <img alt="image" src="./images/icon-ethereum.svg" /><span
+                class="outfit-bold text-cyan"
+                >0.041 ETH</span
+              >
+            </div>
+            <div>
+              <img alt="image" src="./images/icon-clock.svg" /><span
+                class="outfit-regular"
+                >3 days left</span
+              >
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="author">
+          <img alt="image" src="./images/image-avatar.png" />
+          <p class="outfit-light">
+            Creation of <span class="outfit-bold">Coke Stuyck</span>
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="attribution outfit-light" role="contentinfo">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/cokecancook">Coke Stuyck</a>.
+    </div>
+    <script>
+      window.onload = setTimeout(function () {
+        document.getElementById("overlay").style.display = "none";
+      }, 500);
+    </script>
+  </body>
 </html>
