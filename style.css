@@ -108,31 +108,35 @@ li a {
 }
 
 #li1 a {
-  animation: highlight1 3s ease 2s;
+  animation: highlight-item 3s ease 2s;
   animation-iteration-count: 1;
 }
 #li2 a {
-  animation: highlight2 3s ease 2s;
+  animation: highlight-item 3s ease 2.2s;
   animation-iteration-count: 1;
 }
 #li3 a {
-  animation: highlight3 3s ease 2s;
+  animation: highlight-item 3s ease 2.4s;
   animation-iteration-count: 1;
 }
 #li4 a {
-  animation: highlight4 3s ease 2s;
+  animation: highlight-item 3s ease 2.6s;
   animation-iteration-count: 1;
 }
 #li5 a {
-  animation: highlight5 3s ease 2s;
+  animation: highlight-item 3s ease 2.8s;
   animation-iteration-count: 1;
 }
 #li6 a {
-  animation: highlight6 3s ease 2s;
+  animation: highlight-item 3s ease 3s;
   animation-iteration-count: 1;
 }
 #li7 a {
-  animation: highlight7 3s ease 2s;
+  animation: highlight-item 3s ease 3.2s;
+  animation-iteration-count: 1;
+}
+#li8 a {
+  animation: highlight-item 3s ease 3.4s;
   animation-iteration-count: 1;
 }
 
@@ -165,7 +169,7 @@ ul:hover li a:hover {
   }
 }
 
-@keyframes highlight1 {
+@keyframes highlight-item {
   0% {
     color: var(--almost-white);
     background-color: var(--very-dark);
@@ -183,162 +187,6 @@ ul:hover li a:hover {
     background-color: var(--very-dark-gray);
   }
   20% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  100% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-}
-@keyframes highlight2 {
-  0% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  15% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  18% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  21% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  25% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  100% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-}
-@keyframes highlight3 {
-  0% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  20% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  23% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  26% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  31% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  100% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-}
-@keyframes highlight4 {
-  0% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  25% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  28% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  31% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  36% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  100% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-}
-@keyframes highlight5 {
-  0% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  30% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  33% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  36% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  41% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  100% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-}
-@keyframes highlight6 {
-  0% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  35% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  38% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  41% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  46% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  100% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-}
-@keyframes highlight7 {
-  0% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  40% {
-    color: var(--almost-white);
-    background-color: var(--very-dark);
-  }
-  43% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  46% {
-    color: var(--white);
-    background-color: var(--very-dark-gray);
-  }
-  51% {
     color: var(--almost-white);
     background-color: var(--very-dark);
   }
