@@ -18,8 +18,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [https://github.com/cokecancook/cokecancook.github.io/tree/main/blog-preview-card](https://github.com/cokecancook/cokecancook.github.io/tree/main/blog-preview-card)
-- Live Site URL: [https://cokecancook.github.io/blog-preview-card/](https://cokecancook.github.io/blog-preview-card/)
+- Solution URL: [https://github.com/cokecancook/cokecancook.github.io/tree/main/blog-preview-card](https://github.com/cokecancook/cokecancook.github.io/tree/main/nft-preview-card)
+- Live Site URL: [https://cokecancook.github.io/blog-preview-card/](https://cokecancook.github.io/nft-preview-card/)
 
 ### Built with
 
