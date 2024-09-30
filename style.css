@@ -224,7 +224,8 @@ ul:hover li a:hover {
   #li4 a,
   #li5 a,
   #li6 a,
-  #li7 a {
+  #li7 a,
+  #li8 a {
     animation: none;
   }
 }
