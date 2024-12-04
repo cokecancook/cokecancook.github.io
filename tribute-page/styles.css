@@ -1,0 +1,124 @@
+* {
+  box-sizing: box-border;
+}
+
+.bold {
+  font-weight: 700;  
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #111;
+  min-width: 300px;
+}
+
+main {
+  padding: 50px 10px;
+  margin: 20px 16px;
+  background-color: hsl(196, 67%, 54%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#title, #subtitle {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 0.15px;
+  text-align: center;
+  font-size: 4.2em;
+  color: white;
+}
+
+h4 {
+  margin-top: 2px;
+  color: rgb(211, 230, 255); 
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+h2 {
+  margin: 80px 0 40px 20px;
+  font-size: 2.4em;
+  text-align: left;
+  color: white;
+}
+
+p {
+  line-height: 1.6em;
+  text-align: center;
+}
+
+li {
+  margin: 12px 0;
+  font-size: 1.1em;
+  line-height: 1.8rem;
+}
+
+#tribute-info {
+  font-size: 1.3em;
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+#tribute-info p {
+  margin: 0 2.2rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
+#tribute-link {
+  color: rgb(211, 230, 255); 
+  letter-spacing: 0.35px;
+  font-weight: 400;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-right: 24px;
+}
+
+figure {
+  margin-inline-start: -40px!important;
+  margin-inline-end: -40px!important;
+}
+
+#image-div {
+  background-color: white;
+  text-align: center;
+  max-height: 400px;
+  min-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#image {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+}
+
+.small-text {
+  font-size: 0.85em;
+  color: rgb(204, 222, 237);
+  letter-spacing: 0.35px;
+}
+
+.publicaciones {
+  margin: 0 3rem;
+  text-align: left;
+}
