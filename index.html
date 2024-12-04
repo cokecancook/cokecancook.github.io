@@ -23,40 +23,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Coke Stuyck's Playground</title>
+    <title>Coding Playground</title>
   </head>
 
   <body>
     <div id="overlay"></div>
-    <h1 class="urbanist-regular">Playground</h1>
-    <p class="urbanist-regular">Learning about web development.</p>
+    <h1 class="urbanist-regular">Coding Playground</h1>
+    <p class="urbanist-regular">HTML, CSS, and JavaScript</p>
 
-    <ul>
-      <li id="li1">
-        <a href="/qr-code">QR Code</a>
-      </li>
-      <li id="li2">
-        <a href="/blog-preview-card">Blog Preview Card</a>
-      </li>
-      <li id="li3">
-        <a href="/social-links-profile">Social Links Profile</a>
-      </li>
-      <li id="li4">
-        <a href="/recipe-page">Recipe Page</a>
-      </li>
-      <li id="li5">
-        <a href="/product-preview-card-component">Product Preview Card</a>
-      </li>
-      <li id="li6">
-        <a href="/four-card-feature-section">Four Card Feature Section</a>
-      </li>
-      <li id="li7">
-        <a href="/testimonials-grid-section">Testimonials Grid Section</a>
-      </li>
-      <li id="li8">
-        <a href="/nft-preview-card">NFT Preview Card</a>
-      </li>
-    </ul>
+    <img class="qr-code" src="./images/qr-code.svg" alt="qr-code" />
+    <p class="urbanist-regular qr-footer">Scan to view in mobile for<br> automated simulated hover animations</p>
+
+    <div class="links">
+      <ul>
+        <li id="li1">
+          <a href="/qr-code">QR Code</a>
+        </li>
+        <li id="li2">
+          <a href="/blog-preview-card">Blog Preview Card</a><img class="icon-animation" src="./images/icon-animation.svg" alt="animation">
+        </li>
+        <li id="li3">
+          <a href="/social-links-profile">Social Links Profile</a><img class="icon-animation" src="./images/icon-animation.svg" alt="animation">
+        </li>
+        <li id="li4">
+          <a href="/recipe-page">Recipe Page</a>
+        </li>
+        <li id="li5">
+          <a href="/product-preview-card">Product Preview Card</a>
+        </li>
+        <li id="li6">
+          <a href="/features-section">Features Section</a><img class="icon-animation" src="./images/icon-animation.svg" alt="animation">
+        </li>
+        <li id="li7">
+          <a href="/testimonials-grid">Testimonials Grid</a>
+        </li>
+        <li id="li8">
+          <a href="/nft-preview-card">NFT Preview Card</a><img class="icon-animation" src="./images/icon-animation.svg" alt="animation">
+        </li>
+      </ul>
+    </div>
     <script>
       window.onload = setTimeout(function () {
         document.getElementById("overlay").style.display = "none";
