@@ -6,6 +6,7 @@
   /* Neutral Colors */
   --very-dark: hsl(240, 7%, 3%);
   --very-dark-gray: hsl(240, 2%, 7%);
+  --very-dark-gray-transparent: hsla(240, 2%, 18%, 50%);
   --dark-grayish-blue: hsl(227, 6%, 30%);
   --white: hsl(0, 0%, 100%);
   --almost-white: hsl(0, 0%, 75%);
@@ -114,7 +115,7 @@ ul:hover li a {
 
 ul:hover li a:hover {
   color: var(--white);
-  background-color: var(--very-dark-gray);
+  background-color: var(--very-dark-gray-transparent);
 }
 
 @keyframes pulsing {
