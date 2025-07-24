@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -12,55 +11,62 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./styles.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Coke Stuyck's Playground</title>
+    <title>Coke Stuyck | Designer & AI Specialist</title>
   </head>
 
   <body>
     <div id="overlay"></div>
-    <h1 class="urbanist-regular">Playground</h1>
-    <p class="urbanist-regular">Learning about web development.</p>
+    <main>
+      <header>
+        <h1>Coke Stuyck</h1>
+        <p>Designer & AI Specialist</p>
+      </header>
 
-    <ul>
-      <li id="li1">
-        <a href="/qr-code">QR Code</a>
-      </li>
-      <li id="li2">
-        <a href="/blog-preview-card">Blog Preview Card</a>
-      </li>
-      <li id="li3">
-        <a href="/social-links-profile">Social Links Profile</a>
-      </li>
-      <li id="li4">
-        <a href="/recipe-page">Recipe Page</a>
-      </li>
-      <li id="li5">
-        <a href="/product-preview-card-component">Product Preview Card</a>
-      </li>
-      <li id="li6">
-        <a href="/four-card-feature-section">Four Card Feature Section</a>
-      </li>
-      <li id="li7">
-        <a href="/testimonials-grid-section">Testimonials Grid Section</a>
-      </li>
-      <li id="li8">
-        <a href="/nft-preview-card">NFT Preview Card</a>
-      </li>
-    </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/cokecancook/AI-Master-Projects-Hub/">
+              AI Projects
+            </a>
+          </li>
+          <li>
+            <a href="https://cokestuyck.webflow.io/">Portfolio Website</a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/cokestuyck">Behance</a>
+          </li>
+          <li>
+            <a href="https://www.figma.com/@cokestuyck">Figma</a>
+          </li>
+          <li>
+            <a href="/product-preview-card-component">Resume</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/cokestuyck/">Linkedin</a>
+          </li>
+          <li>
+            <a href="https://github.com/cokecancook">Github</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
     <script>
-      window.onload = setTimeout(function () {
-        document.getElementById("overlay").style.display = "none";
-      }, 500);
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          document.getElementById("overlay").style.display = "none";
+        }, 500);
+
+        const listItems = document.querySelectorAll("nav ul li a");
+        listItems.forEach((item, index) => {
+          item.style.animationDelay = `${2 + index * 0.2}s`;
+        });
+      });
     </script>
   </body>
 </html>
